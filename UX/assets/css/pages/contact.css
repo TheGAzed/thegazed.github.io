@@ -1,0 +1,161 @@
+button.NAVBUTTON:nth-child(4) {
+    background-color: #D9D9D9;
+    color: #1B1B1B;
+}
+
+h3 {
+    color: #1B1B1B;
+    margin-bottom: 0.5em;
+}
+
+section {
+    display: grid;
+    grid-template-rows: 1.813em 1fr;
+    align-items: end;
+    row-gap: 0.5em;
+}
+
+section:first-child {
+    grid-template-columns: 3.5em 1fr;
+    
+}
+
+section:first-child > h3{
+    grid-column: span 2;
+}
+
+section:nth-child(2) {
+    grid-column: 3;
+}
+
+section:nth-child(3) {
+    grid-column: 5;
+}
+
+article.SUBPAGE {
+    grid-template-columns: 15em 3.5em 15em 3.5em 15em;
+    column-gap: 0em;
+    row-gap: 1em;
+
+    height: unset;
+}
+
+img#location {
+    width: 100%;
+    height: 100%;
+}
+
+img.INPUTICON {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+img#ADDRESSICON {
+    padding-top: 2.406em;
+    padding-bottom: 2.406em;
+}
+
+form > input.MESSAGEINPUT {
+    height: 1em;
+    padding: 1em;
+}
+
+form > input.MESSAGEINPUT:nth-child(3) {
+    height: auto;
+    text-align: start;
+}
+
+form.USERFORM {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    row-gap: 0.5em;
+
+    align-self: self-start;
+}
+
+button.CONFIRMBUTTON {
+    align-self: self-end;
+}
+
+textarea#MESSAGEAREA {
+    all: unset;
+    height: 93%;
+    padding: 1em;
+    border: 0.15em solid #1B1B1B;
+}
+
+iframe#mapiframe {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    outline: 0.15em solid #1B1B1B;
+    outline-offset: -0.15em;
+}
+
+@media (max-width: 850px) {
+    article.SUBPAGE {
+        all: unset;
+        display: grid;
+        grid-template-columns: 15em 15em;
+        column-gap: 3.5em;
+        justify-content: center;
+        row-gap: 2em;
+        padding-top: 0em;
+        padding-bottom: 0em;
+
+        height: 100%;
+    
+        grid-column: 1 / 5;
+    }
+
+    section:nth-child(2) {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+    
+    section:nth-child(3) {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    main {
+        padding-top: 3.5em;
+        padding-bottom: 3.5em;
+    }
+
+    section:first-child {
+        grid-template-columns: 3.5em 1fr;
+        align-items: center;
+        height: fit-content;
+    }
+
+    section {
+        align-items: center
+    }
+
+    h1#minortitle {
+        grid-column: span 2;
+        grid-row: unset;
+    }
+}
+
+@media (max-width: 550px) {
+    article.SUBPAGE {
+        grid-template-columns: 1fr;
+        padding: 0em 3.5em 0em 3.5em;
+    }
+
+    section:nth-child(2) {
+        grid-column: 1;
+    }
+    
+    section:nth-child(3) {
+        grid-column: 1;
+    }
+
+    textarea#MESSAGEAREA {
+        height: 10em;
+    }
+}

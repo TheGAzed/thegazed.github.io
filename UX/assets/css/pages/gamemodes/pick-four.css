@@ -1,0 +1,39 @@
+section#picksection {
+    display: grid;
+    grid-column: 2;
+    row-gap: 1em;
+}
+
+p#symbolp {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: #863030;
+    border-radius: 0.1em;
+    text-align: center;
+
+    font-size: 150;
+    cursor: default;
+}
+
+span#pickspan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button.PICKBUTTON {
+    width: 4em;
+    height: 4em;
+    border-radius: 0.5em;
+
+    color: #1B1B1B;
+    font-weight: bold;
+    cursor: pointer;
+    background: #FFF;
+}
+
+button.PICKBUTTON:active {
+    transform: scale(0.95);
+}

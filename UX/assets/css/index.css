@@ -1,0 +1,119 @@
+article:first-child >  h2 {
+    color: #1B1B1B;
+    grid-column: span 3;
+}
+
+article:nth-child(2) > section > h2 {
+    color: #D9D9D9;
+    grid-column: span 2;
+}
+
+article.SUBPAGE {
+    height: 22.5em;
+}
+
+.SUBPAGE:nth-child(even) {
+    background-color: #2b2b2b;
+}
+
+article#GAMEMODE > img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+
+    opacity: 0.75;
+}
+
+article#GAMEMODE > img:hover {
+    opacity: 1;
+}
+
+article#ABOUT > img {
+    filter: invert(99%) sepia(0%) saturate(716%) hue-rotate(177deg) brightness(89%) contrast(91%);
+    align-self: center;
+}
+
+article#ABOUT > section {
+    all: unset;
+
+    display: grid;
+    align-content: center;
+    row-gap: 1em;
+    grid-column: span 2;
+}
+
+button.CONFIRMBUTTON {
+    grid-row: 3;
+    justify-self: left;
+}
+
+p {
+    grid-column: span 2;
+}
+
+@media (max-width: 850px) {
+    article:first-child > h2 {
+        color: #1B1B1B;
+        grid-column: span 2;
+    }
+
+    article#GAMEMODE > img {
+        cursor: pointer;
+        opacity: 0.75;
+
+        width: 13em;
+        height: 13em;
+    }
+
+    article.SUBPAGE {
+        height: auto;
+    }
+
+    article#ABOUT > img {
+        width: 0;
+        height: 0;
+        filter: invert(99%) sepia(0%) saturate(716%) hue-rotate(177deg) brightness(89%) contrast(91%);
+        align-self: center;
+    }
+}
+
+@media (max-width: 550px) {
+    article:first-child > h2 {
+        color: #1B1B1B;
+        grid-column: span 1;
+    }
+
+    article#GAMEMODE > img {
+        cursor: pointer;
+        opacity: 0.75;
+        justify-self: center;
+
+        width: 13em;
+        height: 13em;
+    }
+
+    article:nth-child(2) > section > h2 {
+        color: #D9D9D9;
+        grid-column: span 1;
+    }
+
+    p {
+        grid-column: span 1;
+    }
+
+    article#ABOUT > section {
+        all: unset;
+        display: grid;
+        align-content: center;
+        row-gap: 1em;
+        grid-column: span 1;
+    }
+
+    article#ABOUT > section {
+        justify-items: center;
+    }
+
+    button.CONFIRMBUTTON {
+        justify-self: unset;
+    }
+}

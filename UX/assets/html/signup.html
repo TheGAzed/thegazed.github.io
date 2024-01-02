@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages/login.css">
+    <title>login</title>
+</head>
+<body>
+    <header id="MINORHEADER">
+        <img id="SUBLOGO" src="../svg/logo.svg" onclick="location.href='../../index.html'" alt="HIRA.VRT logo">
+
+        <h1 onclick="location.href='../../index.html'">HIRA.VRT</h1>
+
+            <nav id="MINORNAV">
+                <button class="NAVBUTTON" onclick="location.href='../../index.html'">HOME</button>
+                <button class="NAVBUTTON" onclick="location.href='login.html'">LOGIN</button>
+                <button class="NAVBUTTON" onclick="location.href='about.html'">ABOUT</button>
+                <button class="NAVBUTTON" onclick="location.href='contact.html'">CONTACT</button>
+            </nav>
+    </header>
+    <main>
+        <article class="SUBPAGE">
+            <h2>USER REGISTER</h2>
+            <form action="" method="post" class="USERFORM">
+                <img src="../svg/icons/email-input.svg" alt="email input icon" class="INPUTICON">
+                <input type="email" name="iemail" placeholder="EMAIL" class="FORMINPUT">
+        
+                <img src="../svg/icons/password-input.svg" alt="email input icon" class="INPUTICON">
+                <input type="password" name="ipassword" placeholder="PASSWORD" class="FORMINPUT" onclick="togglePassowordVisibility()">
+        
+                <img src="../svg/icons/repeat-password-input.svg" alt="email input icon" class="INPUTICON">
+                <input type="password" name="irepeatpassword" placeholder="REPEAT PASSWORD", class="FORMINPUT" id="repeatpasswordinput" onclick="toggleRepeatVisibility()">
+
+                <script src="../js/pages/login/showhide.js"></script>
+            </form>
+        
+            <button class="CONFIRMBUTTON" onclick="location.href='account.html'">REGISTER</button>
+            <hr class="LINE">
+            <small class="LINESMALL">OR</small>
+        
+            <section class="SOCIALSECTION">
+                <button class="SOCIALBUTTON">
+                    <img src="../svg/icons/gmail-login.svg" alt="google gmail login" onclick="location.href='account.html'">
+                </button>
+                <button class="SOCIALBUTTON">
+                    <img src="../svg/icons/facebook-login.svg" alt="google gmail login" onclick="location.href='account.html'">
+                </button>
+                <button class="SOCIALBUTTON">
+                    <img src="../svg/icons/twitter-login.svg" alt="google gmail login" onclick="location.href='account.html'">
+                </button>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <small id="COPYRIGHT">Copyright 2023</small>
+        <div class="FOOTERLINFO">
+            <a class="FOOTERLINKS" href="../../index.html">HOME</a>
+            <small>|</small>
+            <a class="FOOTERLINKS" href="privicy-policy.html">PRIVACY POLICY</a>
+            <small>|</small>
+            <a class="FOOTERLINKS" href="terms-conditions.html">TERMS & CONDITIONS</a>
+        </div>
+    </footer>
+</body>
+</html>

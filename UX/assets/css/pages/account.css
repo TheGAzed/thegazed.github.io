@@ -1,0 +1,52 @@
+button.NAVBUTTON:nth-child(2) {
+    background-color: #D9D9D9;
+    color: #1B1B1B;
+}
+
+h2 {
+    color: #1B1B1B;
+    grid-column: span 3;
+}
+
+h3 {
+    grid-row: 2;
+    color: #1B1B1B;
+}
+
+h3#stath3 {
+    grid-column: 1;
+}
+
+h3#shareh3 {
+    grid-row: 1;
+}
+
+img#statsimg {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    width: 100%;
+}
+
+span#sharespan {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+button.SOCIALBUTTON {
+    margin-right: 0.5em;
+}
+
+section#sharesection {
+    grid-column: 3;
+    grid-row: span 2;
+}
+
+section#statsection {
+    grid-column: 1 / 3;
+    grid-row: span 2;
+}
+
+button.CHANGEBUTTON {
+    justify-self: start;
+    margin-top: 1em;
+}
